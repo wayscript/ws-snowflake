@@ -5,13 +5,13 @@
 This template is an example of a web server inside the WayScript X lair environment that can query the Snowflake API. It has 1 endpoint to execute SQL statements across any Warehouse, Database, and Schema
 
 - `POST /<warehouse>/<database>/<schema>` execute SQL against a table
-- payload = {'sql':'SQL STATEMENT'}
+- payload = `{'sql':'SQL STATEMENT'}` 
 
 ## Setup
 
 ### 1) Save Credentials to Lair
 
-Three values will need to be saved to your secrets file. These values are your USER, PASSWORD, and ACCOUNT.
+Three values will need to be saved to your secrets file. These values are your `USER`, `PASSWORD`, and `ACCOUNT`.
 These values can be found under your admin panel within your snowflake account.
 
 User is your value listed at the top of the admin panel. Password is the value you use as your password to sign into your user. Account is the hyphenated pair of your organization and user. These values can be found dashboard > Admin ( Left side bar ) > Accounts
