@@ -32,7 +32,6 @@ def execute_sql(warehouse, database, schema):
     if request.method == 'POST':
 
         data = request.get_json()
-        print(data)
         if data.get('sql') is None:
             return 'Missing Body Parameter sql'
         
