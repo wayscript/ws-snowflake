@@ -26,7 +26,7 @@ The app should now be accessible via the endpoint specified next to the trigger.
 
 ### 3) Verify that service is up and working correctly
 
-Visit the `ENDPOINT/status` endpoint. If you get "Slack API is connected and working properly", it means the service is running and authenticated to connect with your slack workspace. You can also run the `example.py` by typing `python example.py` inside a WayScript terminal or press the play button in the top right corner of wayscript with `example.py` open.
+Visit the `ENDPOINT/status` endpoint. If you get "Snowflake API is connected and working properly", it means the service is running and authenticated to connect with your snowflake account. You can also run the `example.py` by typing `python example.py` inside a WayScript terminal or press the play button in the top right corner of wayscript with `example.py` open.
 
 # Further reading
 
