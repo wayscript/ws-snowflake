@@ -5,7 +5,7 @@
 This template is an example of a web server inside the WayScript X lair environment that can query the Snowflake API. It has 1 endpoint to execute SQL statements across any Warehouse, Database, and Schema
 
 - `POST /<warehouse>/<database>/<schema>` execute SQL against a table
-- payload = {'sql':'<SQL STATEMENT>'}
+- payload = {'sql':'SQL STATEMENT'}
 
 ## Setup
 
@@ -18,13 +18,13 @@ User is your value listed at the top of the admin panel. Password is the value y
 
 Next, save the key to the [`.secrets`](https://docs.wayscript.com/platform/lairs/environment-variables#example-.env-and-.secrets-files) file in your Lair. Each of these values will need to be stored in secrets and follow the same case sensativity as they are referenced in your app.py file (call CAPS by default.)
 
-### 3) Deploy application
+### 2) Deploy application
 
 A trigger should already be pre-configured. [Follow this guide](https://docs.wayscript.com/quickstart-spin-up-server/python/host-a-flask-server#configure-deploy-trigger) to set a trigger in case the trigger isn't present. Press the play button next to the trigger to deploy the flask app.
 
 The app should now be accessible via the endpoint specified next to the trigger. By default, the endpoint is only privately accessible, i.e. it can only be accessed in a browser where you are already logged into WayScript. You can make it publicly accesssible by going to the endpoints tab and setting "Make endpoints publicly accessible" to true. You can learn more about endpoints [here](https://docs.wayscript.com/platform/lairs/endpoints).
 
-### 4) Verify that service is up and working correctly
+### 3) Verify that service is up and working correctly
 
 Visit the `ENDPOINT/status` endpoint. If you get "Slack API is connected and working properly", it means the service is running and authenticated to connect with your slack workspace. You can also run the `example.py` by typing `python example.py` inside a WayScript terminal or press the play button in the top right corner of wayscript with `example.py` open.
 
