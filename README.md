@@ -1,4 +1,4 @@
-![img](https://i.ibb.co/Vgv9nf1/interface3.png)
+[![img](https://github.com/wayscript/wsx-docs/raw/master/.gitbook/assets/deploy.png)](https://app.wayscript.com/deploy/?githubUrl=https://github.com/wayscript/ws-snowflake)
 
 # Spin Up a Snowflake Microservice using WayScript
 
